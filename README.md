@@ -109,7 +109,7 @@
   - 讀寫檔案
 - 以下是錯誤的例子
 
-  ```php+HTML
+  ```php
   <?php
   // side effect: 更改 ini 設定
   ini_set('error_reporting', E_ALL);
