@@ -1,6 +1,47 @@
 # PSR
 
-
+   * [PSR](#psr)
+      * [什麼是PSR？](#什麼是psr)
+      * [與一般程式開發最有關的規格](#與一般程式開發最有關的規格)
+      * [專有名詞解釋](#專有名詞解釋)
+      * [PSR-1 Basic Coding Standard](#psr-1-basic-coding-standard)
+         * [概觀](#概觀)
+         * [特別說明](#特別說明)
+            * [PHP標籤](#php標籤)
+            * [什麼是UTF-8的BOM？](#什麼是utf-8的bom)
+            * [什麼是副作用 Side Effects](#什麼是副作用-side-effects)
+            * [Class、Contant、Function、Property命名規則](#classcontantfunctionproperty命名規則)
+            * [什麼是Property](#什麼是property)
+            * [Property命名原則](#property命名原則)
+      * [PSR-12 Extended Coding Style](#psr-12-extended-coding-style)
+         * [概觀](#概觀-1)
+            * [基本規範](#基本規範)
+            * [檔案](#檔案)
+            * [每一行](#每一行)
+            * [關鍵字與型態](#關鍵字與型態)
+         * [宣告語句、Namespace以及Import語句](#宣告語句namespace以及import語句)
+         * [Classes、Properties、Method](#classespropertiesmethod)
+            * [extends及implements](#extends及implements)
+            * [traits](#traits)
+            * [屬性properties及常數constant](#屬性properties及常數constant)
+            * [函式function及方法method](#函式function及方法method)
+            * [abstract final static](#abstract-final-static)
+         * [流程結構 Control Structure](#流程結構-control-structure)
+            * [if elseif else](#if-elseif-else)
+            * [switch case](#switch-case)
+            * [while do while](#while-do-while)
+            * [for](#for)
+            * [foreach](#foreach)
+            * [try catch finally](#try-catch-finally)
+         * [運算子 Operators](#運算子-operators)
+            * [一元運算子 Unary operators](#一元運算子-unary-operators)
+            * [二元運算子 Binary operators](#二元運算子-binary-operators)
+            * [三元運算子 Ternary operators](#三元運算子-ternary-operators)
+         * [閉包Closures](#閉包closures)
+         * [匿名類別 Anonymous Classes](#匿名類別-anonymous-classes)
+      * [PSR-4 Autoloader](#psr-4-autoloader)
+         * [規格](#規格)
+         * [例子](#例子)
 
 ## 什麼是PSR？
 
@@ -13,7 +54,7 @@
   - Abandoned: 未通過
   - Deprecated: 已捨棄
 
-## 與開發者最有關的規格
+## 與一般程式開發最有關的規格
 
 分別是PSR-1, PSR-12, PSR-4
 
@@ -365,7 +406,7 @@
 
   
 
-#### 屬性 (properties)及常數 (constant)
+#### 屬性properties及常數constant
 
 - 所有的屬性**一定**要宣告能見度
 
@@ -393,7 +434,7 @@
 
   
 
-#### 函式 (function)及方法 (method)
+#### 函式function及方法method
 
 - 所有的方法**一定**要加上能見度
 
@@ -436,7 +477,7 @@
 
   
 
-####函式 (function)及方法 (method)的參數 (arguments)
+####函式function及方法method的參數arguments
 
 - 多參數時，參數與逗號間**一定不可**有空格，逗號後**一定**要接空格
 
@@ -539,7 +580,7 @@
 
   
 
-#### abstract、final、static
+#### abstract final static
 
 - ```abstract```與```final```**一定**要放在能見度宣告之前
 
@@ -565,7 +606,7 @@
 
   
 
-####呼叫函式 (function)及方法 (method)
+####呼叫函式function及方法method
 
 - 呼叫函式或方法，在函式名稱與開頭括號之間**一定不能**有空格，在開頭括號後與結束括號前**一定不能**有空格
 
@@ -620,7 +661,7 @@
 - 結束的大括號**一定**要在結構的程式碼的下一行
 - 結構的程式碼本身**一定**要包在大括號之間
 
-#### if, elseif, else
+#### if elseif else
 
 - ```else```與```elseif```必須得與前一個的結尾大括號同一行
 
@@ -704,7 +745,7 @@
 
   
 
-#### while, do while
+#### while do while
 
 - ```while```與```do while```的表達方式如下
 
@@ -788,7 +829,7 @@
 
   
 
-#### try, catch, finally
+#### try catch finally
 
 - 表達方式如下
 
@@ -998,7 +1039,7 @@
   - 完全合格的class name中，字母使用大寫和小寫的組合皆可
   - 所有的class name**一定**要將大小寫視為不同
 
-- 例子
+### 例子
 
   - | 完全合格的class name         | namespace prefix | base directory         |            resulting file path            |
     | ---------------------------- | ---------------- | ---------------------- | :---------------------------------------: |
