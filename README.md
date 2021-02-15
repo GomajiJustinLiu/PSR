@@ -477,7 +477,7 @@
 
   
 
-####函式function及方法method的參數arguments
+#### 函式function及方法method的參數arguments
 
 - 多參數時，參數與逗號間**一定不可**有空格，逗號後**一定**要接空格
 
