@@ -147,7 +147,7 @@
   }
   ```
 
-#### Class、Contant、Function、Property命名規則
+#### Class、Constant、Function、Property命名規則
 
 - Class包含了所有的classes、interfaces、traits
 - 什麼是traits？[說明](https://www.php.net/manual/zh/language.oop5.traits.php)
@@ -1049,3 +1049,18 @@
     | \Symfony\Core\Request        | Symfony\Core     | ./vendor/Symfony/Core/ |     ./vendor/Symfony/Core/Request.php     |
     | \Zend\Acl                    | Zend             | /usr/includes/Zend/    |        /usr/includes/Zend/Acl.php         |
 
+
+## PSR檢查工具
+
+### [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+
+```shell
+composer global require "squizlabs/php_codesniffer=*"
+```
+
+### Docker版[PHP_CodeSniffer](https://github.com/herloct/docker-phpcs)
+```shell
+docker run --rm \
+  --volume /local/path:/project \
+  herloct/phpcs --standard=PSR12 .
+```
