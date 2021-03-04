@@ -43,6 +43,7 @@
       * [PSR-4 Autoloader](#psr-4-autoloader)
          * [規格](#規格)
          * [例子](#例子)
+      * [PSR檢查工具](#PSR檢查工具)
 
 ## 什麼是PSR？
 
